@@ -63,7 +63,7 @@ html{
 body{
     margin: 0px;
     padding: 0px;
-    background-image: url("LislePark1.JPG");
+    background-image: url("../IMG/LislePark1.JPG");
     background-attachment:local;
     background-size:cover;
 }
@@ -128,7 +128,7 @@ table{
 
 thead {
     color:green;
-    background-color:powderblue;
+    background-color:skyblue;
     text-decoration-style: double;
     font-size: 1.4em;
     font-family: sans-serif;
@@ -142,29 +142,42 @@ thead {
 }
 
 .profile{
-    color:green;
-    background-color:powderblue;
+    color:black;
+    background-color:skyblue;
     text-decoration-style: double;
     font-size: 1.1em;
     font-family:monospace;
     text-shadow: 2px 2px white;
     font-weight: 600;
-    vertical-align:baseline;
 }
 tbody {
-    color:blue;
-    background-color:antiquewhite;
+    color:white;
+    background-color:black;
     height:inherit;
     margin-bottom: auto;
     margin-top: auto;
     font-size: 1.3em;
+    text-align: center;
 }
 tfoot {
-    color:red;
+    text-align: center;
+    background-color:black;
+    font-size: 1.3em;
+    
+}
+
+th,td{
+    width:200px;
+    height:30px;
+    vertical-align: middle;
 }
 table,th,td{
    border:1px solid black;
    column-rule-width: thick;
+}
+img{
+    width: 40px;
+    height: 40px;
 }
 
 footer{
