@@ -1,5 +1,55 @@
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*************************************************/
+/* end http://meyerweb.com/eric/tools/css/reset/ */
+/*************************************************/
 
 html{
 	 font-family : verdana, cursive , sans-serif;
@@ -20,12 +70,15 @@ body{
 
 div#container{
     margin-top: 5%;
-    width:85%;
+    width:80%;
+    height:auto;
     margin-left:auto;
     margin-right: auto;
     padding: 10px;
     border-radius: 5px;
     background-color: palevioletred;
+    position: relative;
+    border-radius: 10px;
     
 }
 
@@ -33,7 +86,6 @@ div#container{
 header{
     margin: 0;
     padding: 00px;
-    height: 12%;
     position: relative;
     border-radius: 10px;
     overflow:hidden;
@@ -49,37 +101,44 @@ header{
 h2#title{
     text-align: center;
     text-shadow: 2px 2px white;
-    text-decoration-style: wavy;
-    text-emphasis-style: triangle;
-    font-size: 2.0em;
+    font-size: 1.5em;
     font-weight: 300;
     font-family:fantasy;
-    width: 100%;
-    height: 100%;
-    padding-top: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     vertical-align:middle;
     
 }
 
 
+
 table{
+    border-collapse:inherit;
+    border-spacing: 3px;
+    border-width: thick;
     align-content: center;
     align-self: center;
     column-width: auto;
-    border-bottom-width: thick;
     border-radius: 10px;
-    table-layout: auto;
+    table-layout:inherit;
     font-family: monospace;
-    font-size: 0.9em;
+    position: relative;
 }
+
+
 thead {
     color:green;
     background-color:powderblue;
     text-decoration-style: double;
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-family: sans-serif;
     text-shadow: 2px 2px white;
     
+}
+
+#top-left{
+    background-color:darkblue;
+
 }
 
 .profile{
@@ -90,17 +149,22 @@ thead {
     font-family:monospace;
     text-shadow: 2px 2px white;
     font-weight: 600;
+    vertical-align:baseline;
 }
 tbody {
     color:blue;
     background-color:antiquewhite;
+    height:inherit;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-size: 1.3em;
 }
 tfoot {
     color:red;
 }
 table,th,td{
-    border:1px solid black;
-    column-rule-width: thick;
+   border:1px solid black;
+   column-rule-width: thick;
 }
 
 footer{
